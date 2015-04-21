@@ -21,7 +21,7 @@
  *    instantiating is like traditional. Ex: $foo = ExampleModel
  */
 function autoload($className) {
-    $directories = array("Models/", "Controllers/");
+    $directories = array("Models/", "Controllers/","models/","controllers/");
     $extensions = array('%s.php', '%s.php.inc', '%s.class.php', 'class.%s.php');
 
     foreach ($directories as $dir) {
