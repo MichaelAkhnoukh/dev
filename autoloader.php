@@ -16,12 +16,12 @@
  *    extensions other than the predefined 
  *    (Good practice is name the class name and the file name always the same)
  * 3- if you are instantiating from a class within a namespace you should use the 
- *    fully qualified name. Ex: $foo = Main\utils\ExampleModel
+ *    fully qualified name. Ex: $foo = new Main\utils\ExampleModel
  * 4- using with classes from global namespace (without namespaces) 
- *    instantiating is like traditional. Ex: $foo = ExampleModel
+ *    instantiating is like traditional. Ex: $foo = new ExampleModel
  */
 function autoload($className) {
-    $directories = array("Models/", "Controllers/","models/","controllers/");
+    $directories = array("Models/", "Controllers/","models/","controllers/","classes/","Classes/");
     $extensions = array('%s.php', '%s.php.inc', '%s.class.php', 'class.%s.php');
 
     foreach ($directories as $dir) {
